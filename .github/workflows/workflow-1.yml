@@ -17,5 +17,10 @@ jobs:
         with:
           name: 'Moo'
 
+      - name: Run stand-alone custom action
+        uses: jabrah/my-custom-action@v0.1.0
+        with:
+          name: 'Lorem ipsum'
+
       - run: echo "Done workflow"
         shell: bash
