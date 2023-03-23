@@ -7,8 +7,6 @@ inputs:
     required: true
     default: 'World'
 
-outputs:
-
 runs:
   using: 'composite'
   steps:
