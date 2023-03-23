@@ -1,0 +1,16 @@
+name: 'Test Composite Action #1'
+description: 'First test action'
+
+inputs:
+  name:
+    description: 'Name'
+    required: true
+    default: 'World'
+
+outputs:
+
+runs:
+  using: 'composite'
+  steps:
+    - run: echo "Hello, ${{  inputs.name }}!"
+      shell: bash
